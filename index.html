@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>meine Webseite</title>
+    <title>Knockside kek</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-
-<body>
-    <h1>Hello World </h1>
-    <p> Dies ist meine Blog Seite! Ich bin Timo! Das ist ein Test </p>
-
-    <p> Dies ist meine Blog Seite! Ich bin Timo! Das ist ein Test </p>
-
-    <p> Dies ist meine Blog Seite! Ich bin Timo! Das ist ein Test </p>
-
-    <p> Dies ist meine Blog Seite! Ich bin Timo! Das ist ein Test </
-
-    <p> Dies ist meine Blog Seite! Ich bin Timo! 
-
-    <p>
-
-    >
-
-
-    
-    
-
-
-    
-
-
-</body>
+  <body>
+    <div id="app" @click="gotoAfter">
+      <h1>Hello World </h1>
+      <p> Dies ist meine Blog Seite! Ich bin Timo! Das ist ein Test </p>
+      <p v-for="k in 7">{{msg}}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+      new Vue({
+        el: '#app',
+        data(){
+          return {
+            msg: 'KnockSide=kek Dies ist eine Blog Seite! Ich bin Timo! Das ist ein Test'
+          }
+        },
+        methods(){
+          gotoAfter(){
+            this.kekw()
+            window.location.href = 'https://afterlife-rp.de'
+          },
+          kekw(){
+            console.log('afterlife ist cool!')
+          }
+        }
+      })
+    </script>
+  </body>
 </html>
