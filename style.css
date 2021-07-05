@@ -12,6 +12,7 @@ html {
     box-sizing: inherit;
   }
   
+  /* Hindergrund*/
   body {
     background-color: Indigo;
     font-family: Verdana, sans-serif;
@@ -22,12 +23,12 @@ html {
   a:hover, a:focus {
     text-decoration: none;
   }
-  /* Links that open in new windows */
+  /* Links welche in einem neuen Fenster geöffnet werden */
   a[target='_blank']:after {
     content: '↗';
   }
   
-  /* Headings */
+  /* Überschriften */
   h1,
   h2,
   h3,
@@ -70,7 +71,7 @@ html {
     margin-top: 1em;
   }
   
-  /* image blocks */
+  /* Bild Block */
   figure {
     background-color: #333;
     border: 6px solid teal;
