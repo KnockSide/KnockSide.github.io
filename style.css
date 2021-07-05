@@ -1,61 +1,87 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;    
     box-sizing: border-box;
     font-size: 100%;
 }
+
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     max-width: 50em;
+    min-height: 100vh;
     font-size: 1em;
     line-height: 1.4;
 }
+
 header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #6fa8dc;
-    padding: .25em 0;
+    padding: 1em;
 }
+
 header img {
-    float: left;
-    padding-left: 1em;
+    flex-shrink: 0;
 }
+
 h1 {
-    float: left;
+    flex-grow: 1;
     padding-left: .5em;
     font-size: 2.5em;
 }
+
 nav {
+    padding: .5em;
     text-transform: uppercase;
     background-color: #e06666;
-    padding: .25em 0;
 }
+
 nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     list-style-type: none;
-    padding-left: 1.25em;
+    padding-left: .5em;
 }
+
 nav li {
-    float: left;
     padding-right: 1.5em;
 }
+
 main {
-    background-color: #b4a7d6;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
 }
+
 article {
-    float: left;
+    flex-grow: 4;
     padding: 1em;
-    width: 75%;
-    background-color: white;
 }
-aside {
-    float: left;
-    width: 25%;
-    padding: .5em;
+
+h2 {
+    font-size: 2em;
+}
+
+article p {
+    margin-bottom: 1em;
+}
+
+.aside-left, .aside-right {
+    flex-grow: 1;
+    padding: 1em;
     background-color: #b4a7d6;
 }
-footer {
-    background-color: #b6d7a8;
-    padding: .25em 1em;
+
+h3 {
+    font-size: 1.25em;
+    margin-bottom: .5em;
 }
-.self-clear::after {
-    content: "";
-    display: block;
-    clear: both;
+
+footer {
+    padding: 1em;
+    background-color: #b6d7a8;
 }
