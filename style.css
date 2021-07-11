@@ -1,4 +1,4 @@
-/* set the overall style */
+
 html {
     box-sizing: border-box;
     color: white;
@@ -12,7 +12,7 @@ html {
     box-sizing: inherit;
   }
   
-  /* Hindergrund*/
+  
   body {
     background-color: Indigo;
     font-family: Verdana, sans-serif;
