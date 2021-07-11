@@ -14,7 +14,13 @@ html {
   
   /* Hindergrund*/
   body {
-    background-color: Indigo;
+    background-image: url("../tippelschritt.github.io/assets/PC.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center; 
+    image-rendering: optimizeQuality;
     font-family: Verdana, sans-serif;
     padding: 1em;
   }
