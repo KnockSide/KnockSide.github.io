@@ -141,7 +141,7 @@ html {
   section {
     background-image: url(https://cdn.glitch.com/ed4401b4-63ba-4d6d-9a5b-8d29ce101a74%2Fpink_rice.png?v=1585880822219);
     border-radius: 10px;
-    color: Indigo;
+    color: rgb(83, 109, 196);
     padding: 0.5rem 1rem;
   }
   
